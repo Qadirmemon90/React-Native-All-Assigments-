@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Designs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>HTML Table Designs</h1>
+
+    <div class="design-box">
+        <h2>Design 1</h2>
+        <table class="design-one">
+            <tr>
+                <th colspan="4">STUDENT INFORMATION</th>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td colspan="2">Abdul Qadir</td>
+                <td rowspan="3" class="photo-cell"><img src="./IMG_0521.JPG" alt="Abdul Qadir" width="150" height="auto"></td>
+            </tr>
+            <tr>
+                <th>Course</th>
+                <td colspan="2">Web Development</td>
+            </tr>
+            <tr>
+                <th>Batch</th>
+                <td>Class 7</td>
+                <td>Morning</td>
+            </tr>
+            <tr>
+                <th colspan="2">Status</th>
+                <td colspan="2">Active</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="design-box">
+        <h2>Design 2</h2>
+        <table class="design-two">
+            <tr>
+                <th rowspan="2">Day</th>
+                <th colspan="3">Schedule</th>
+            </tr>
+            <tr>
+                <th>Subject</th>
+                <th>Time</th>
+                <th>Room</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td>HTML</td>
+                <td>09:00 AM</td>
+                <td>Lab 1</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>11:00 AM</td>
+                <td>Lab 2</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td colspan="2">Table Practice</td>
+                <td>Lab 3</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Assignment</td>
+                <td>10:00 AM</td>
+                <td>Room 4</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="design-box">
+        <h2>Design 3</h2>
+        <table class="design-three">
+            <tr>
+                <th colspan="5">PRODUCT INVOICE</th>
+            </tr>
+            <tr>
+                <th>#</th>
+                <th>Product</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Keyboard</td>
+                <td>1</td>
+                <td>Rs. 2,500</td>
+                <td>Rs. 2,500</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mouse</td>
+                <td>2</td>
+                <td>Rs. 1,000</td>
+                <td>Rs. 2,000</td>
+            </tr>
+            <tr>
+                <td rowspan="2" colspan="3" class="invoice-note">Thank you for your purchase.</td>
+                <th>Subtotal</th>
+                <td>Rs. 4,500</td>
+            </tr>
+            <tr>
+                <th>Grand Total</th>
+                <td>Rs. 4,500</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="design-box">
+        <h2>Design 4</h2>
+        <table class="design-four">
+            <tr>
+                <th colspan="6">MONTHLY RESULT CARD</th>
+            </tr>
+            <tr>
+                <th rowspan="2">Student</th>
+                <th colspan="4">Subjects</th>
+                <th rowspan="2">Grade</th>
+            </tr>
+            <tr>
+                <th>HTML</th>
+                <th>CSS</th>
+                <th>Tables</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>Abdul Qadir</td>
+                <td>90</td>
+                <td>88</td>
+                <td>92</td>
+                <td>270</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <td>Nimra</td>
+                <td>86</td>
+                <td>91</td>
+                <td>89</td>
+                <td>266</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <th colspan="4">Class Average</th>
+                <td colspan="2">89.3%</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
