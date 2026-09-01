@@ -1,0 +1,155 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        transform: translateX(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes pulseSoft {
+
+    0%,
+    100% {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.15);
+    }
+}
+
+.fade-up {
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.fade-right {
+    animation: fadeRight 0.8s ease forwards;
+}
+
+.fade-left {
+    animation: fadeLeft 0.8s ease forwards;
+}
+
+.float {
+    animation: float 4s ease-in-out infinite;
+}
+
+.pulse-soft {
+    animation: pulseSoft 2s ease-in-out infinite;
+}
+
+.delay-1 {
+    animation-delay: 0.15s;
+}
+
+.delay-2 {
+    animation-delay: 0.3s;
+}
+
+.delay-3 {
+    animation-delay: 0.45s;
+}
+
+.delay-4 {
+    animation-delay: 0.6s;
+}
+
+.glass {
+    background: rgba(17, 24, 39, 0.65);
+    backdrop-filter: blur(12px);
+}
+
+.tag {
+    padding: 6px 10px;
+    border: 1px solid #30363d;
+    border-radius: 999px;
+    font-size: 11px;
+    color: #9ca3af;
+    transition: all 0.2s ease;
+}
+
+.tag:hover {
+    color: #60a5fa;
+    border-color: #3b82f6;
+}
+
+
+.skill-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 16px;
+
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+
+    background: rgba(17, 24, 39, 0.45);
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-1px);
+    border-color: #374151;
+    background: rgba(17, 24, 39, 0.8);
+}
+
+
+.skill-level {
+    font-size: 11px;
+    color: #4b5563;
+}

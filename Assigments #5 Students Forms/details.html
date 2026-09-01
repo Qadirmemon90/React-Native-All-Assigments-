@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Details</title>
+</head>
+
+<body style="
+    margin: 0;
+    padding: 40px 20px;
+    background-color: #f4f6f8;
+    font-family: Arial, sans-serif;
+    color: #222222;
+">
+
+    <div style="
+        background-color: #ffffff;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 35px;
+        box-sizing: border-box;
+        border-radius: 12px;
+    ">
+
+        <div style="
+            text-align: center;
+            margin-bottom: 30px;
+        ">
+
+            <div style="
+                width: 55px;
+                height: 55px;
+                margin: 0 auto 15px auto;
+                background-color: #111827;
+                color: #ffffff;
+                border-radius: 50%;
+                font-size: 28px;
+                line-height: 55px;
+            ">
+                ✓
+            </div>
+
+            <h1 style="
+                margin: 0 0 8px 0;
+                color: #111827;
+                font-size: 28px;
+            ">
+                Registration Successful
+            </h1>
+
+            <p style="
+                margin: 0;
+                color: #6b7280;
+                font-size: 14px;
+            ">
+                Your submitted information is shown below.
+            </p>
+
+        </div>
+
+        <div style="
+            background-color: #f9fafb;
+            padding: 20px;
+            border-radius: 8px;
+        ">
+
+            <p style="font-size: 15px; margin: 0 0 15px 0;">
+                <strong>Full Name:</strong>
+                <span id="fullName"></span>
+            </p>
+
+            <p style="font-size: 15px; margin: 0 0 15px 0;">
+                <strong>Email:</strong>
+                <span id="email"></span>
+            </p>
+
+            <p style="font-size: 15px; margin: 0 0 15px 0;">
+                <strong>Contact Number:</strong>
+                <span id="contact"></span>
+            </p>
+
+            <p style="font-size: 15px; margin: 0 0 15px 0;">
+                <strong>Date of Birth:</strong>
+                <span id="dob"></span>
+            </p>
+
+            <p style="font-size: 15px; margin: 0 0 15px 0;">
+                <strong>Gender:</strong>
+                <span id="gender"></span>
+            </p>
+
+            <p style="font-size: 15px; margin: 0 0 15px 0;">
+                <strong>Selected Courses:</strong>
+                <span id="courses"></span>
+            </p>
+
+            <p style="font-size: 15px; margin: 0 0 15px 0;">
+                <strong>City:</strong>
+                <span id="city"></span>
+            </p>
+
+            <p style="font-size: 15px; margin: 0 0 15px 0;">
+                <strong>Country:</strong>
+                <span id="country"></span>
+            </p>
+
+            <p style="font-size: 15px; margin: 0 0 15px 0;">
+                <strong>Address:</strong>
+                <span id="address"></span>
+            </p>
+
+            <p style="font-size: 15px; margin: 0;">
+                <strong>Additional Information:</strong>
+                <span id="information"></span>
+            </p>
+
+        </div>
+
+        <a
+            href="index.html"
+            style="
+                display: block;
+                width: 100%;
+                height: 48px;
+                line-height: 48px;
+                margin-top: 25px;
+                background-color: #111827;
+                color: #ffffff;
+                font-size: 15px;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 7px;
+                box-sizing: border-box;
+            "
+        >
+            Back to Registration
+        </a>
+
+    </div>
+
+
+    <script>
+
+        const params = new URLSearchParams(window.location.search);
+
+        document.getElementById("fullName").textContent =
+            params.get("fullName") || "Not Provided";
+
+        document.getElementById("email").textContent =
+            params.get("email") || "Not Provided";
+
+        document.getElementById("contact").textContent =
+            params.get("contact") || "Not Provided";
+
+        document.getElementById("dob").textContent =
+            params.get("dob") || "Not Provided";
+
+        document.getElementById("gender").textContent =
+            params.get("gender") || "Not Provided";
+
+        document.getElementById("city").textContent =
+            params.get("city") || "Not Provided";
+
+        document.getElementById("country").textContent =
+            params.get("country") || "Not Provided";
+
+        document.getElementById("address").textContent =
+            params.get("address") || "Not Provided";
+
+        document.getElementById("information").textContent =
+            params.get("information") || "Not Provided";
+
+
+        const courses = params.getAll("courses");
+
+        document.getElementById("courses").textContent =
+            courses.length > 0
+                ? courses.join(", ")
+                : "No Course Selected";
+
+    </script>
+
+</body>
+</html>

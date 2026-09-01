@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+  </head>
+
+  <body
+    style="
+      margin: 0;
+      padding: 40px 20px;
+      background-color: #f4f6f8;
+      font-family: Arial, sans-serif;
+      color: #222222;
+    "
+  >
+    <form
+      action="details.html"
+      method="get"
+      style="
+        background-color: #ffffff;
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto;
+        padding: 35px;
+        box-sizing: border-box;
+        border-radius: 12px;
+      "
+    >
+      <h1
+        style="
+          color: #111827;
+          font-size: 28px;
+          margin: 0 0 8px 0;
+          text-align: center;
+        "
+      >
+        Student Registration
+      </h1>
+
+      <p
+        style="
+          color: #6b7280;
+          font-size: 14px;
+          margin: 0 0 30px 0;
+          text-align: center;
+        "
+      >
+        Please fill in your details below
+      </p>
+
+      <label
+        for="fullName"
+        style="display: block; font-size: 14px; margin-bottom: 7px"
+      >
+        Full Name
+      </label>
+
+      <input
+        type="text"
+        id="fullName"
+        name="fullName"
+        placeholder="Enter your full name"
+        required
+        style="
+          width: 100%;
+          height: 45px;
+          padding: 0 12px;
+          margin-bottom: 20px;
+          font-size: 14px;
+          background-color: #f9fafb;
+          border: 1px solid #d1d5db;
+          border-radius: 7px;
+          box-sizing: border-box;
+        "
+      />
+
+      <label
+        for="email"
+        style="display: block; font-size: 14px; margin-bottom: 7px"
+      >
+        Email Address
+      </label>
+
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+        style="
+          width: 100%;
+          height: 45px;
+          padding: 0 12px;
+          margin-bottom: 20px;
+          font-size: 14px;
+          background-color: #f9fafb;
+          border: 1px solid #d1d5db;
+          border-radius: 7px;
+          box-sizing: border-box;
+        "
+      />
+
+      <label
+        for="password"
+        style="display: block; font-size: 14px; margin-bottom: 7px"
+      >
+        Password
+      </label>
+
+      <input
+        type="password"
+        id="password"
+        name="password"
+        minlength="6"
+        maxlength="20"
+        placeholder="Enter your password"
+        required
+        style="
+          width: 100%;
+          height: 45px;
+          padding: 0 12px;
+          margin-bottom: 20px;
+          font-size: 14px;
+          background-color: #f9fafb;
+          border: 1px solid #d1d5db;
+          border-radius: 7px;
+          box-sizing: border-box;
+        "
+      />
+
+      <label
+        for="contact"
+        style="display: block; font-size: 14px; margin-bottom: 7px"
+      >
+        Contact Number
+      </label>
+
+      <input
+        type="tel"
+        id="contact"
+        name="contact"
+        placeholder="03XX-XXXXXXX"
+        required
+        style="
+          width: 100%;
+          height: 45px;
+          padding: 0 12px;
+          margin-bottom: 20px;
+          font-size: 14px;
+          background-color: #f9fafb;
+          border: 1px solid #d1d5db;
+          border-radius: 7px;
+          box-sizing: border-box;
+        "
+      />
+
+      <label
+        for="dob"
+        style="display: block; font-size: 14px; margin-bottom: 7px"
+      >
+        Date of Birth
+      </label>
+
+      <input
+        type="date"
+        id="dob"
+        name="dob"
+        required
+        style="
+          width: 100%;
+          height: 45px;
+          padding: 0 12px;
+          margin-bottom: 20px;
+          font-size: 14px;
+          background-color: #f9fafb;
+          border: 1px solid #d1d5db;
+          border-radius: 7px;
+          box-sizing: border-box;
+        "
+      />
+
+      <label style="display: block; font-size: 14px; margin-bottom: 10px">
+        Gender
+      </label>
+
+      <div
+        style="
+          background-color: #f9fafb;
+          padding: 15px;
+          margin-bottom: 20px;
+          border-radius: 7px;
+        "
+      >
+        <label style="margin-right: 20px">
+          <input type="radio" name="gender" value="Male" required />
+          Male
+        </label>
+
+        <label style="margin-right: 20px">
+          <input type="radio" name="gender" value="Female" />
+          Female
+        </label>
+
+        <label>
+          <input type="radio" name="gender" value="Other" />
+          Other
+        </label>
+      </div>
+
+      <label style="display: block; font-size: 14px; margin-bottom: 10px">
+        Select Courses
+      </label>
+
+      <div
+        style="
+          background-color: #f9fafb;
+          padding: 15px;
+          margin-bottom: 20px;
+          border-radius: 7px;
+        "
+      >
+        <label style="display: block; margin-bottom: 10px">
+          <input type="checkbox" name="courses" value="HTML" />
+          HTML
+        </label>
+
+        <label style="display: block; margin-bottom: 10px">
+          <input type="checkbox" name="courses" value="CSS" />
+          CSS
+        </label>
+
+        <label style="display: block; margin-bottom: 10px">
+          <input type="checkbox" name="courses" value="JavaScript" />
+          JavaScript
+        </label>
+
+        <label style="display: block">
+          <input type="checkbox" name="courses" value="React" />
+          React
+        </label>
+      </div>
+
+      <label
+        for="city"
+        style="display: block; font-size: 14px; margin-bottom: 7px"
+      >
+        City
+      </label>
+
+      <input
+        type="text"
+        id="city"
+        name="city"
+        placeholder="Enter your city"
+        style="
+          width: 100%;
+          height: 45px;
+          padding: 0 12px;
+          margin-bottom: 20px;
+          font-size: 14px;
+          background-color: #f9fafb;
+          border: 1px solid #d1d5db;
+          border-radius: 7px;
+          box-sizing: border-box;
+        "
+      />
+
+      <label
+        for="country"
+        style="display: block; font-size: 14px; margin-bottom: 7px"
+      >
+        Country
+      </label>
+
+      <select
+        id="country"
+        name="country"
+        style="
+          width: 100%;
+          height: 45px;
+          padding: 0 12px;
+          margin-bottom: 20px;
+          font-size: 14px;
+          background-color: #f9fafb;
+          border: 1px solid #d1d5db;
+          border-radius: 7px;
+          box-sizing: border-box;
+        "
+      >
+        <option value="">Select Country</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="UAE">UAE</option>
+        <option value="Saudi Arabia">Saudi Arabia</option>
+        <option value="United Kingdom">United Kingdom</option>
+      </select>
+
+      <label
+        for="address"
+        style="display: block; font-size: 14px; margin-bottom: 7px"
+      >
+        Address
+      </label>
+
+      <textarea
+        id="address"
+        name="address"
+        placeholder="Enter your address"
+        style="
+          width: 100%;
+          height: 80px;
+          padding: 12px;
+          margin-bottom: 20px;
+          font-size: 14px;
+          background-color: #f9fafb;
+          border: 1px solid #d1d5db;
+          border-radius: 7px;
+          box-sizing: border-box;
+        "
+      ></textarea>
+
+      <label
+        for="information"
+        style="display: block; font-size: 14px; margin-bottom: 7px"
+      >
+        Additional Information
+      </label>
+
+      <textarea
+        id="information"
+        name="information"
+        placeholder="Write additional information..."
+        maxlength="300"
+        style="
+          width: 100%;
+          height: 100px;
+          padding: 12px;
+          margin-bottom: 25px;
+          font-size: 14px;
+          background-color: #f9fafb;
+          border: 1px solid #d1d5db;
+          border-radius: 7px;
+          box-sizing: border-box;
+        "
+      ></textarea>
+
+      <button
+        type="submit"
+        style="
+          width: 100%;
+          height: 48px;
+          padding: 10px;
+          margin: 0;
+          background-color: #111827;
+          color: #ffffff;
+          font-size: 16px;
+          border: none;
+          border-radius: 7px;
+          cursor: pointer;
+        "
+      >
+        Submit Registration
+      </button>
+    </form>
+  </body>
+</html>
