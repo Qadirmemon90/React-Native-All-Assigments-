@@ -1,0 +1,507 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 18px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #111111;
+}
+
+.container {
+    width: 760px;
+    margin: 0 auto;
+    border: 1px solid #9d9d9d;
+    background-color: #ffffff;
+}
+
+nav {
+    background-color: #eeeeee;
+    border-bottom: 1px solid #aaaaaa;
+    text-align: center;
+    padding: 11px 8px;
+}
+
+nav a {
+    color: #0000cc;
+    font-size: 14px;
+    margin: 0 11px;
+    text-decoration: underline;
+}
+
+nav span {
+    color: #888888;
+}
+
+.page-heading {
+    text-align: center;
+    padding: 14px 10px;
+    border-bottom: 1px solid #a5a5a5;
+}
+
+.page-heading h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 29px;
+    margin: 0;
+}
+
+.page-heading p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 7px 0 0;
+}
+
+.yellow {
+    background: linear-gradient(to right, #fffed3, #ffffb8, #fffed3);
+}
+
+.green {
+    background: linear-gradient(to right, #e5f8c6, #d6f4b4, #e5f8c6);
+}
+
+.peach {
+    background: linear-gradient(to right, #ffe6d1, #ffd8b9, #ffe6d1);
+}
+
+.blue {
+    background: linear-gradient(to right, #ddf6ff, #ccefff, #ddf6ff);
+}
+
+.purple {
+    background: linear-gradient(to right, #f2e2ff, #ecd4ff, #f2e2ff);
+}
+
+.hero-image {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid #b5b5b5;
+}
+
+.content {
+    padding: 20px 24px;
+}
+
+h2 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px;
+    margin: 0 0 12px;
+}
+
+h3 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.center {
+    text-align: center;
+}
+
+.home-welcome {
+    padding: 13px 24px 10px;
+    text-align: center;
+}
+
+.home-welcome h2 {
+    margin-bottom: 6px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #999999;
+    margin: 12px 0;
+}
+
+.course-section-title {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 6px 0 8px;
+}
+
+.course-grid {
+    width: calc(100% - 30px);
+    margin: 0 auto 14px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid #999999;
+    border-left: 1px solid #999999;
+}
+
+.course-card {
+    min-height: 165px;
+    padding: 11px 8px;
+    text-align: center;
+    border-right: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+}
+
+.course-card img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+.course-card h4 {
+    margin: 2px 0 8px;
+    font-size: 14px;
+}
+
+.course-card p {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.why-box {
+    border-top: 1px solid #b8b8b8;
+    padding: 12px 0 13px;
+    background: linear-gradient(to right, #f2e2ff, #ead6ff, #f2e2ff);
+}
+
+.why-box h3 {
+    text-align: center;
+    margin: 0 0 6px;
+    font-size: 17px;
+}
+
+.why-box ul {
+    width: 230px;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.about-row {
+    display: grid;
+    grid-template-columns: 52% 48%;
+    gap: 24px;
+    align-items: start;
+}
+
+.about-row img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border: 1px solid #999999;
+}
+
+.about-row p {
+    margin-top: 7px;
+    line-height: 1.9;
+}
+
+.info-block {
+    margin-top: 26px;
+}
+
+.info-block h2 {
+    font-size: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+th, td {
+    border: 1px solid #8f8f8f;
+    padding: 11px 9px;
+    vertical-align: top;
+}
+
+th {
+    background-color: #dcebfa;
+    text-align: center;
+}
+
+.students-table th {
+    background: linear-gradient(to bottom, #ffd9dc, #ffbfc5);
+}
+
+.students-table td {
+    vertical-align: middle;
+}
+
+.status-active {
+    color: #0b6d19;
+    font-weight: bold;
+}
+
+.status-inactive {
+    color: #a40000;
+    font-weight: bold;
+}
+
+.form-table td:first-child {
+    width: 28%;
+}
+
+.form-table input[type="text"],
+.form-table input[type="email"],
+.form-table input[type="password"],
+.form-table input[type="tel"],
+.form-table textarea,
+.form-table select {
+    width: 100%;
+    padding: 7px 8px;
+    border: 1px solid #999999;
+    border-radius: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    background: #ffffff;
+}
+
+.form-table textarea {
+    min-height: 95px;
+    resize: vertical;
+}
+
+.choice-row label {
+    margin-right: 16px;
+    white-space: nowrap;
+}
+
+.form-actions {
+    text-align: center;
+    padding: 14px 0 3px;
+}
+
+button,
+.button-link {
+    display: inline-block;
+    border: 1px solid #777777;
+    background: #eeeeee;
+    color: #111111;
+    padding: 7px 18px;
+    border-radius: 3px;
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover,
+.button-link:hover {
+    background: #dddddd;
+}
+
+.error-text {
+    color: #b00020;
+    font-size: 12px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.footer {
+    background: linear-gradient(to right, #e7facb, #dff5bf, #e7facb);
+    border-top: 1px solid #a8a8a8;
+    text-align: center;
+    font-size: 12px;
+    padding: 11px;
+}
+
+.empty-message {
+    text-align: center;
+    color: #555555;
+    padding: 18px;
+}
+
+.profile-card {
+    border: 1px solid #999999;
+    margin: 0;
+}
+
+.profile-card .profile-top {
+    background-color: #f5f5f5;
+    padding: 18px;
+    text-align: center;
+    border-bottom: 1px solid #999999;
+}
+
+.avatar {
+    width: 78px;
+    height: 78px;
+    margin: 0 auto 9px;
+    border-radius: 50%;
+    background-color: #dcecff;
+    border: 1px solid #8fa9c2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.profile-top h2 {
+    margin: 0;
+}
+
+.profile-details {
+    width: 100%;
+}
+
+.profile-details td:first-child {
+    width: 30%;
+    font-weight: bold;
+    background-color: #f7f7f7;
+}
+
+.success-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.42);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+}
+
+.success-overlay.show {
+    display: flex;
+}
+
+.success-box {
+    width: 320px;
+    background: white;
+    border: 1px solid #777777;
+    padding: 26px 20px;
+    text-align: center;
+    animation: popIn 0.35s ease-out;
+}
+
+.success-check {
+    width: 66px;
+    height: 66px;
+    margin: 0 auto 12px;
+    border-radius: 50%;
+    background-color: #dcf5d8;
+    border: 2px solid #4a9e42;
+    color: #2f7b28;
+    font-size: 38px;
+    line-height: 62px;
+    font-weight: bold;
+}
+
+.success-box h2 {
+    font-size: 23px;
+    margin-bottom: 7px;
+}
+
+.success-box p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+@keyframes popIn {
+    from {
+        transform: scale(0.82);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    border: 1px solid #999999;
+}
+
+.contact-info {
+    background-color: #f7f7f7;
+    padding: 18px;
+    border-right: 1px solid #999999;
+}
+
+.contact-info h3 {
+    margin-top: 0;
+}
+
+.contact-form {
+    padding: 18px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 13px;
+    margin: 8px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #999999;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-form textarea {
+    min-height: 100px;
+}
+
+.small-note {
+    font-size: 12px;
+    color: #555555;
+}
+
+@media (max-width: 800px) {
+    body {
+        padding: 0;
+    }
+
+    .container {
+        width: 100%;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 4px 7px;
+    }
+
+    nav span {
+        display: none;
+    }
+
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-row,
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        border-right: 0;
+        border-bottom: 1px solid #999999;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
+
+.students-content {
+    padding: 14px 8px 70px;
+}
+
+.registration-content {
+    padding: 10px 14px 20px;
+}
