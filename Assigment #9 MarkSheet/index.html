@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Marksheet Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <div class="logo">SM</div>
+            <h1>Student Marksheet Generator</h1>
+            <p>Academic Result Management System</p>
+        </header>
+
+        <div class="main-card">
+
+            <div class="welcome">
+                <h2>Generate Your Marksheet</h2>
+                <p>Enter student information and subject marks below.</p>
+            </div>
+
+            <button class="generate-btn" onclick="openModal()">
+                + Enter Student Details
+            </button>
+
+            <div id="result"></div>
+
+        </div>
+
+        <footer>
+            <p>© 2026 Student Marksheet Generator</p>
+        </footer>
+
+    </div>
+
+
+    <!-- Student Information Modal -->
+
+    <div class="modal-overlay" id="studentModal">
+
+        <div class="modal">
+
+            <div class="modal-header">
+                <div>
+                    <h2>Student Details</h2>
+                    <p>Fill in all information to continue</p>
+                </div>
+
+                <button class="close-btn" onclick="closeModal()">
+                    &times;
+                </button>
+            </div>
+
+
+            <div class="modal-body">
+
+                <h3>Personal Information</h3>
+
+                <div class="input-group">
+                    <label>Student Name</label>
+                    <input type="text" id="studentName" placeholder="Enter student name">
+                </div>
+
+                <div class="input-group">
+                    <label>Roll Number</label>
+                    <input type="text" id="rollNumber" placeholder="Enter roll number">
+                </div>
+
+                <div class="input-group">
+                    <label>Class</label>
+                    <input type="text" id="studentClass" placeholder="Enter class">
+                </div>
+
+
+                <h3 class="subject-title">Subject Marks</h3>
+
+                <div class="input-group">
+                    <label>English</label>
+                    <input type="number" id="english" placeholder="Marks out of 100">
+                </div>
+
+                <div class="input-group">
+                    <label>Mathematics</label>
+                    <input type="number" id="mathematics" placeholder="Marks out of 100">
+                </div>
+
+                <div class="input-group">
+                    <label>Physics</label>
+                    <input type="number" id="physics" placeholder="Marks out of 100">
+                </div>
+
+                <div class="input-group">
+                    <label>Chemistry</label>
+                    <input type="number" id="chemistry" placeholder="Marks out of 100">
+                </div>
+
+                <div class="input-group">
+                    <label>Computer Science</label>
+                    <input type="number" id="computer" placeholder="Marks out of 100">
+                </div>
+
+                <div class="input-group">
+                    <label>Urdu</label>
+                    <input type="number" id="urdu" placeholder="Marks out of 100">
+                </div>
+
+                <div class="input-group">
+                    <label>Islamiat</label>
+                    <input type="number" id="islamiat" placeholder="Marks out of 100">
+                </div>
+
+            </div>
+
+
+            <div class="modal-footer">
+
+                <button class="cancel-btn" onclick="closeModal()">
+                    Cancel
+                </button>
+
+                <button class="submit-btn" onclick="generateMarksheet()">
+                    Generate Marksheet
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
